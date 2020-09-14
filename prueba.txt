@@ -3,3 +3,19 @@ Git (pronunciado "guit"2​) es un software de control de versiones diseñado po
 Al principio, Git se pensó como un motor de bajo nivel sobre el cual otros pudieran escribir la interfaz de usuario o front end como Cogito o StGIT. 3​Sin embargo, Git se ha convertido desde entonces en un sistema de control de versiones con funcionalidad plena. 4​Hay algunos proyectos de mucha relevancia que ya usan Git, en particular, el grupo de programación del núcleo Linux.
 
 El mantenimiento del software Git está actualmente (2009) supervisado por Junio Hamano, quien recibe contribuciones al código de alrededor de 280 programadores. En cuanto a derechos de autor Git es un software libre distribuible bajo los términos de la versión 2 de la Licencia Pública General de GNU.
+
+
+
+Crear un proyecto
+Al crear el repositorio, inmediatamente nos va a llevar a él. Como nuestro proyecto no tiene nada en su interior, no nos va a mostrar más que una ayuda para subir archivos y proyectos.
+
+Para crear un proyecto desde cero, habrá que comenzar creando los archivos del mismo y luego subiéndolos a la página.
+
+En el primer recuadro de la ayuda, verás una serie de comandos para el terminal.
+
+touch README.md
+git init
+git add README.md
+git commit -m "comentario"
+git remote add origin https://github.com/LuchoCastillo/Repositorio.git
+git push -u origin master
