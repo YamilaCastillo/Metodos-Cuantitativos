@@ -5,24 +5,24 @@ y=df$Presion
 plot(x,y)
 
 
-y =mx+n
-
-n=y-mx
-
-m =dy/dx
-
 #recta de regresion lineal 
-m=cov(y,x)/var(x)
+#m=cov(y,x)/var(x)
 
-n=mean(y)-m*mean(x)
+#n=mean(y)-m*mean(x)
 
-m;n
-plot(x,y)
-abline(n,m,col="red")
+#m;n
+#plot(x,y)
+#abline(n,m,col="red")
 
 #predec
-resy=m*30+n
-resy
+#resy=m*30+n
+#resy
+
+
+#usando lm
+res=lm(y~x)
+summary(res)
+plot(res)
 
 
 
